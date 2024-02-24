@@ -2,18 +2,18 @@ const express = require("express");
 const ErrorHandler = require("./middleware/error");
 const app = express();
 const cookieParser = require("cookie-parser");
-const cors = require('cors');      
+// const cors = require('cors');      
 const  EventEmitter =   require('events');
 EventEmitter.defaultMaxListeners = 15;   
 
       
 
-const corsOptions = {   
-  origin: ['http://localhost:3000', 'http://localhost:3001'],
-  credentials: true,                                                            
-};
+// const corsOptions = {   
+//   origin: ['http://localhost:3000', 'http://localhost:3001'],
+//   credentials: true,                                                            
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 app.use(cookieParser());
 app.use("/test", (req, res) => {

@@ -1,0 +1,12 @@
+{
+    "mappings": {
+      "properties": {
+        "content": {
+          "type": "text"
+        },
+        "other_field": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
